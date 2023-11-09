@@ -11,7 +11,13 @@ Prior we were using
 "@gluestack-ui/themed": "1.0.1",
 "@gluestack-ui/transitions": "^0.1.9",
 ```
-
+When we noticed the memory increase the versions were
+```
+"@gluestack-style/react": "1.0.11",
+"@gluestack-ui/config": "1.0.3",
+"@gluestack-ui/themed": "1.0.9",
+"@gluestack-ui/transitions": "^0.1.10",
+```
 The memory increase was brought to our attention when our ci started throwing `JavaScript heap out of memory`
 
 We have a temp work around to set the memory higher but want to know why the increase in memory usage in happening
