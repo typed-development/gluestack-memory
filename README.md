@@ -19,9 +19,9 @@ We have a temp work around to set the memory higher but want to know why the inc
 We looked through the bundle sizes are there has been no significant increase during upgrade so that points to a memory usage issue only.
 
 ## System specs
-Node v18.18.2
-yarn 1.22.19
-Apple M1 Pro 14-inch, 2021 32GB Ram
+- Node v18.18.2
+- yarn 1.22.19
+- Apple M1 Pro 14-inch, 2021 32GB Ram
 
 ## Steps to reproduce
 We are trying to set up a repo with this outside of our internal repo but are having issues getting the memory to be within the expect range for post upgrade. By taking the pre upgrade versions and applying them to the next-head-starter-kit and building the next app. We are still seeing post upgrade memory usage....
