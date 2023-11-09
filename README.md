@@ -16,10 +16,16 @@ The memory increase was brought to our attention when our ci started throwing `J
 
 We have a temp work around to set the memory higher but want to know why the increase in memory usage in happening
 
+We looked through the bundle sizes are there has been no significant increase during upgrade so that points to a memory usage issue only.
+ 
 ## Steps to reproduce
-We are trying to set up a repo with this outside of our internal repo but are having issues getting the memory to be within the expect range for post upgrade. By taking the pre upgrade versions and applying them to the next-head-starter-kit and building the next app. We are still seeing post upgrade memory usage. 
-We though this might be a rabbit hole but we can predictibly reproduce the memory usage in our internal repo.
+We are trying to set up a repo with this outside of our internal repo but are having issues getting the memory to be within the expect range for post upgrade. By taking the pre upgrade versions and applying them to the next-head-starter-kit and building the next app. We are still seeing post upgrade memory usage....
+We though this might be a rabbit hole but we can predictably reproduce the memory usage in our internal repo.
 
+**Steps we have tried to get starter to simulate issue** 
+- Upgrading to latest building; No success ❌
+- Reverting to version that work for our repo; No success ❌
+- Copying our yarn.lockfile over and install then building; No success ❌
 
 ## Results
 Using `/usr/bin/time -l yarn build` we can see the max memory consumed during the build.
