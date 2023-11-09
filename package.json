@@ -16,6 +16,7 @@
   "dependencies": {
     "@expo/html-elements": "latest",
     "@gluestack-style/animation-resolver": "^1.0.0",
+    "@gluestack-style/babel-plugin-styled-resolver": "^1.0.1",
     "@gluestack-style/react": "latest",
     "@gluestack-ui/config": "^1.0.1",
     "@gluestack-ui/themed": "latest",
